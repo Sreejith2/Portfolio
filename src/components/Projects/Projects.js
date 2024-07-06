@@ -5,6 +5,8 @@ import Particle from "../Particle";
 import editor from "../../Assets/Projects/amazon.png";
 import Notenest from "../../Assets/Projects/Notenest.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import askGemini from "../../Assets/Projects/askGemini.png"
+import shopper from "../../Assets/Projects/shopper.png"
 
 function Projects() {
   return (
@@ -18,6 +20,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={askGemini}
+              isBlog={false}
+              title="AskGemini"
+              description="Built an AI assistant using React,TailwindCSS and Gemini API"
+              ghLink="https://github.com/Sreejith2/AskGemini"
+              demoLink="https://askgemini.netlify.app/"              
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Notenest}
@@ -48,6 +60,16 @@ function Projects() {
               description="Built an amazon clone using React and TailwindCSS"
               ghLink="https://github.com/Sreejith2/amazon"
               demoLink="https://amazon-clone-124.netlify.app/"              
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={shopper}
+              isBlog={false}
+              title="Shopper"
+              description="Built an E-commerce website using React.js and TailwindCSS"
+              ghLink="https://github.com/Sreejith2/E-Commerce-Website"
+              demoLink="https://dressify-123.netlify.app/"              
             />
           </Col>
         </Row>
