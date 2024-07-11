@@ -7,6 +7,7 @@ import Notenest from "../../Assets/Projects/Notenest.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 import askGemini from "../../Assets/Projects/askGemini.png"
 import shopper from "../../Assets/Projects/shopper.png"
+import Pixie from "../../Assets/Projects/Pixie.png"
 
 function Projects() {
   return (
@@ -20,6 +21,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Pixie}
+              isBlog={false}
+              title="Pixie"
+              description="Pixie is a full-stack web application that allows users to sign up, sign in, upload images, and like images. Developed using React for the front end and Firebase for backend services"
+              ghLink="https://github.com/Sreejith2/Pixie"
+              demoLink="https://pixie123.netlify.app/"              
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={askGemini}
