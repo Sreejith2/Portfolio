@@ -8,6 +8,7 @@ import bitsOfCode from "../../Assets/Projects/blog.png";
 import askGemini from "../../Assets/Projects/askGemini.png"
 import shopper from "../../Assets/Projects/shopper.png"
 import Pixie from "../../Assets/Projects/Pixie.png"
+import PPE_Detection from "../../Assets/Projects/PPE_Detection.png"
 
 function Projects() {
   return (
@@ -33,6 +34,26 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={PPE_Detection}
+              isBlog={false}
+              title="PPE Detection System"
+              description="A web-based Personal Protective Equipment (PPE) detection system to enhance workplace safety 
+by identifying compliance with safety standards, such as wearing helmets and vests."
+              ghLink="https://github.com/Sreejith2/PPE_Detection"             
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={bitsOfCode}
+              isBlog={false}
+              title="Blog-Website"
+              description="Blog website build with Node.js,Express.js,PostgreSQL and EJS.Include Posting,Deleting and Editing Features"
+              ghLink="https://github.com/Sreejith2/Blog"
+              demoLink=""
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={askGemini}
               isBlog={false}
               title="AskGemini"
@@ -51,18 +72,6 @@ function Projects() {
               demoLink="https://notekeeperapp12.netlify.app/"
             />
           </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Blog-Website"
-              description="Blog website build with Node.js,Express.js,PostgreSQL and EJS.Include Posting,Deleting and Editing Features"
-              ghLink="https://github.com/Sreejith2/Blog"
-              demoLink=""
-            />
-          </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={editor}
